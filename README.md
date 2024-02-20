@@ -60,3 +60,9 @@ Elde edilen sonuçları incelemek için:
 explorer.ex .
 ```
 bu kod ile dosya konumuna girip elde edilem html. dosyasını açarak sonuçlara ulaşabilirsiniz.
+
+## İleri ve Geri yonlü iki dosyanız var ise:
+
+```
+fastqc data/simulation_s1.fq.gz data/simulation_s2.fq.gz
+```
