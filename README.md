@@ -3,25 +3,17 @@
 FastQC, yüksek kaliteli RNA-seq veya DNA-seq verilerinin kalitesini değerlendirmek için kullanılan bir araçtır. Bu kılavuzda, FastQC'nin kurulumu ve temel kullanımı adımlarını bulacaksınız.
 
 ## Kurulum
+Bu komut, Conda paket yöneticisi aracılığıyla "bioconda" kanalından "fastqc" paketini kurar. İşlevi şunlardır:
 
-1. **Java'nın Yüklenmesi:**
-   FastQC, Java tabanlı bir araçtır. Bu nedenle, bilgisayarınızda Java'nın yüklü olduğundan emin olun. Java'yı [Java'nın resmi web sitesinden](https://www.java.com/) veya paket yöneticiniz aracılığıyla yükleyebilirsiniz.
+1. **Paket Yöneticisi Aracılığıyla Kurulum**: Conda, Python ve diğer diller için bir paket yöneticisi ve ortam yöneticisidir.
+ `conda install` komutu, belirli bir paketin Conda depolarından (standart veya özel) yüklenmesini sağlar. Bu durumda, `fastqc` paketi, bioinformatic alanında kullanılan bir araç olan FastQC'nin Conda ortamına kurulmasını sağlar.
 
-2. **FastQC'nin İndirilmesi:**
-   FastQC'nin en son sürümünü [resmi web sitesinden](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) indirin.
+2. **bioconda Kanalı**: "bioconda" kanalı, biyoinformatik araçlarının (örneğin, genetik veri analizi araçları gibi) yayınlandığı bir Conda kanalıdır. Bu kanal, biyoinformatik topluluğu için popüler ve yaygın olarak kullanılan araçların kolayca erişilebilir olmasını sağlar. FastQC gibi biyoinformatik araçlarını kurmak için genellikle "bioconda" kanalı kullanılır.
 
-3. **FastQC'nin Kurulması:**
-   İndirdiğiniz dosyayı açın ve içindeki `fastqc` dosyasını bir klasöre kopyalayın. Ardından, bu klasörü PATH ortam değişkenine ekleyin.
+3. **FastQC Paketi**: FastQC, yüksek hacimli genetik verilerin kalite kontrolü için kullanılan popüler bir araçtır. Genellikle, bir dizi veri setinin (örneğin, FASTQ dosyalarının) kalite değerlendirmesi yapmak için kullanılır. Bu nedenle, 
+```
+conda install -c bioconda fastqc
 
-## Kullanım
+```
+ komutu, FastQC aracının Conda ortamına kurulumunu gerçekleştirir ve kullanıcının bu aracı hızlı bir şekilde yüklemesini sağlar.
 
-1. **Komut Satırından FastQC'nin Başlatılması:**
-   Terminal veya komut istemcisinde FastQC'yi çalıştırın:
-   ```bash
-   fastqc my_data.fastq
-
-## Çıktı Dosyalarını İnceleme:
-FastQC analizi tamamlandığında, çıktı dosyalarını inceleyebilirsiniz. Genellikle aynı klasöre my_data_fastqc.html ve my_data_fastqc.zip adıyla kaydedilirler. HTML raporlarını bir web tarayıcısı ile açarak analiz sonuçlarını görsel olarak inceleyebilirsiniz.
-
-## Yardım Ve Destek
-FastQC'nin kullanımıyla ilgili daha fazla bilgi için resmi FastQC Kullanım Kılavuzuna göz atabilirsiniz. Ayrıca, FastQC Yardım Sayfası ve Bioinformatics Knowledge Wiki - FastQC gibi kaynaklar da faydalı olabilir.
