@@ -28,7 +28,7 @@ conda install -c bioconda fastqc
     - `fastqc seqdosya1 seqdosya2 .. seqdosyaN`
     - `fastqc [-o çıktı dizini] [--(no)extract] [-f fastq|bam|sam] [-c kontaminant dosyası] seqdosya1 .. seqdosyaN`
 
-- **DESCRIPTION** (Açıklama):
+ **DESCRIPTION** (Açıklama):
     - FastQC, bir dizi dizgi dosyasını okur ve her birinden veri setinizdeki farklı olası problemleri belirlemeye yardımcı olacak bir dizi farklı modülden oluşan bir kalite kontrol raporu üretir.
     - Komut satırında işlenecek dosyalar belirtilmezse, program etkileşimli bir grafik uygulaması olarak başlar. Dosyalar komut satırında belirtilirse, kullanıcı etkileşimi gerektirmeyen bir şekilde çalışır. Bu mod, standartlaştırılmış bir analiz iş akışına dahil edilmek için uygundur.
     - Programın seçenekleri aşağıdaki gibidir:
@@ -57,7 +57,7 @@ fastqc fasqc-(ortam)/(inceleyeceğiniz dosyanın ismi)
 
 Elde edilen sonuçları incelemek için:
 ```
-explorer.ex .
+explorer.exe .
 ```
 bu kod ile dosya konumuna girip elde edilem html. dosyasını açarak sonuçlara ulaşabilirsiniz.
 
